@@ -1,0 +1,1 @@
+function[C] = test(A)  C = [];  n=1;  while (n <= columns(A))   #parcour la matrice    B = A(1,n)    if B <= 3      C = [C 1]      endif    if B > 3      C = [C 0]      endif    n++    endwhile  endfunction

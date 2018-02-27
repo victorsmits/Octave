@@ -1,0 +1,1 @@
+function [Id,Vak] = exo3(Is,T,pas=0.01)  Vak= [-5:pas:0.8]  Id = diode(Is,T,Vak);  plot(Vak,Id)  title("Id en fonction de Vak")  xlabel("Vak")  ylabel("Id")endfunction

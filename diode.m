@@ -1,0 +1,1 @@
+function[Id] = diode(Is,T,Vak)  k = 1.38e-23;  q = 1.6e-19;  t = T + 273;  Vt = (k*t)/q  Id = Is .*(e.^(Vak./Vt)-1);endfunction  

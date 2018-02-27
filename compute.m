@@ -1,0 +1,1 @@
+function [ minval , maxval ] = compute (a, b, c)  data = [a b c];  minval = min ( data );  maxval = max ( data );endfunction
