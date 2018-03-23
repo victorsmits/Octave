@@ -1,0 +1,1 @@
+function[x,y] = translation(x,y,tx,ty)  x1 = x + tx;  y1 = y + ty;  fill (x, y,'g', x1, y1,'r')endfunction

@@ -1,0 +1,1 @@
+function[pic seuil] = temperature(A)  moy = mean(A);  sig = std(A);  seuil = moy + sig;   y = find(A > seuil);  len = columns(y);  pic = A(y);  Day = [floor(y/24)+1 ]  Hour = [y-floor(y/24)*24]  plot(A)  hold  plot(y,A(y),'x','color','r')  
