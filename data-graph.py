@@ -1,10 +1,10 @@
-from numpy import loadtxt, polyfit, polyval, linspace
+from numpy import loadtxt, polyfit, polyval
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
 pp = PdfPages('plot.pdf')
 data = loadtxt("data.txt")
-x = data[:, 0]
+x = data[:, 0]      # prend toute la première colone
 label = ["CO", "GE", "EM"]
 student = 0
 for i in range(1, 4):
