@@ -1,0 +1,1 @@
+function[Z]= matsin(x,y,decal)    Z =( 0.1 * sin(2*pi*x.*y)).+decal;    row = rows(Z);    col = columns(Z);    matrand = randn(row,col).*0.002;    Z .+ matrand;    Z(Z<0)=0;    surf(x,y,Z)endfunction          
